@@ -1,0 +1,191 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+/* EFFET FONDU AU CHARGEMENT DE LA PAGE */
+.overlay { 
+    animation: fadeInAnimation ease 5s; 
+    animation-fill-mode: forwards; 
+    /* animation-iteration-count: 1.5;  */
+} 
+@keyframes fadeInAnimation { 
+        0% { 
+        opacity: 0; 
+    } 
+        100% { 
+        opacity: 1; 
+    } 
+} 
+/* ===================================== */
+
+/* OVERLAY */
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    z-index: 99;
+} 
+.second {
+    /* background: #141414; */
+    background-image: url('img/john.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+/* ======================== */
+.img-one {
+    background-image: url("./img/jon-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 30px;
+    margin-left: 30px;
+    overflow: hidden;
+    position: relative;
+
+    width: 500px;
+    height:100%;
+    z-index: -1;
+} 
+.hidden-img {
+    background-color: #000000;
+    overflow: hidden;
+    width: 500px;
+    height: 700px;
+}
+/* ================================== */
+.container-button{
+    position: absolute;
+    transform: translateY('-50%');
+    width: 350px;
+    text-align: center;
+    margin-top: 200px;
+    margin-left: 1100px;
+}
+.button{
+    width: 500px;
+    height: 500px;
+    border-radius: 500px;
+    border: 1px solid rgb(223, 120, 120);
+    overflow: hidden;
+}
+.arrow i{
+    color: rgb(223, 120, 120);
+    text-align: center;
+    margin-top: 43%;
+    font-size: 7em;
+}
+/* ================================== */
+
+.icone {
+    /* !!!POSSIBILITE DE DISPLAY:none POUR QUE CA MARCHE AVEC LE RESPONSIVE */
+    /* display: none; */
+    position: absolute;
+    margin-top: 0px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1700px;
+    height: 1000px;
+}
+.icone path:nth-child(1) {
+    stroke-dasharray: 7943px;
+    stroke-dashoffset: 7943px;
+    animation: anim 35s ease forwards;
+
+    animation-delay: 2s;
+}
+@keyframes anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+@media (max-width: 699px){
+    .overlay {
+        background-color: orange;  
+    }
+    .second{
+        display: none;
+    }
+
+    .icone{
+        width: 450px;
+        height: 450px;
+    }
+
+    .img-one{
+        width: 300px;
+        height: 400px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 100px;
+    }
+
+    .button{
+        width: 280px;
+        height: 280px;
+        border-radius: 280px;
+        margin-left: -850px;
+        margin-bottom: -180px
+    }
+
+    .arrow i{
+        font-size: 6em;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1199px){
+    .overlay {
+        background-color: orange;  
+    }
+    .second{
+        display: none;
+    }
+
+    .icone{
+        width: 850px;
+        height: 850px;
+    }
+
+    .img-one{
+        width: 500px;
+        height: 600px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 100px;
+    }
+
+    .button{
+        width: 380px;
+        height: 380px;
+        border-radius: 380px;
+        margin-left: -600px;
+        margin-bottom: -70px
+    }
+
+    .arrow i{
+        font-size: 6em;
+    }
+}
+
+
+
+[transition-style="in:circle:hesitate"] {
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-in-hesitate both;
+}
+@keyframes circle-in-hesitate {
+    0% {
+      clip-path: circle(0%);
+    }
+    40% {
+      clip-path: circle(40%);
+    }
+    100% {
+      clip-path: circle(125%);
+    }
+  }

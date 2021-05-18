@@ -1,0 +1,307 @@
+@font-face{
+    font-family: "Misto"; 
+    src: url('./fonts/Misto/Misto.otf') format('opentype');
+  }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+/* OVERLAY */
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    z-index: 99;
+} 
+.first {
+    background: #ffffff;
+}
+
+.icone {
+    /* !!!POSSIBILITE DE DISPLAY:none POUR QUE CA MARCHE AVEC LE RESPONSIVE */
+    /* display: none; */
+    position: absolute;
+    margin-top: 0px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    height: 200px;
+}
+.icone path:nth-child(1) {
+    stroke-dasharray: 349px;
+    stroke-dashoffset: 349px;
+    animation: anim 8s ease forwards;
+
+    animation-delay: 0.2s;
+}
+.icone path:nth-child(2) {
+    stroke-dasharray: 349px;
+    stroke-dashoffset: 349px;
+    animation: anim 8s ease forwards;
+
+    animation-delay: 0.2s;
+}
+.icone path:nth-child(3) {
+    stroke-dasharray: 349px;
+    stroke-dashoffset: 349px;
+    animation: anim 8s ease forwards;
+
+    animation-delay: 0.2s;
+}
+.icone path:nth-child(4) {
+    stroke-dasharray: 349px;
+    stroke-dashoffset: 349px;
+    animation: anim 8s ease forwards;
+
+    animation-delay: 0.2s;
+}
+.icone path:nth-child(5) {
+    stroke-dasharray: 349px;
+    stroke-dashoffset: 349px;
+    animation: anim 8s ease forwards;
+
+    animation-delay: 0.2s;
+}
+.icone path:nth-child(6) {
+    stroke-dasharray: 349px;
+    stroke-dashoffset: 349px;
+    animation: anim 8s ease forwards;
+
+    animation-delay: 0.2s;
+}
+.icone path:nth-child(7) {
+    stroke-dasharray: 349px;
+    stroke-dashoffset: 349px;
+    animation: anim 8s ease forwards;
+
+    animation-delay: 0.2s;
+}
+.icone path:nth-child(8) {
+    stroke-dasharray: 349px;
+    stroke-dashoffset: 349px;
+    animation: anim 8s ease forwards;
+
+    animation-delay: 0.2s;
+}
+.icone path:nth-child(9) {
+    stroke-dasharray: 349px;
+    stroke-dashoffset: 349px;
+    animation: anim 8s ease forwards;
+
+    animation-delay: 0.2s;
+}
+.icone path:nth-child(10) {
+    stroke-dasharray: 349px;
+    stroke-dashoffset: 349px;
+    animation: anim 8s ease forwards;
+
+    animation-delay: 0.2s;
+}
+.icone path:nth-child(11) {
+    stroke-dasharray: 349px;
+    stroke-dashoffset: 349px;
+    animation: anim 8s ease forwards;
+
+    animation-delay: 0.2s;
+}
+.icone path:nth-child(12) {
+    stroke-dasharray: 349px;
+    stroke-dashoffset: 349px;
+    animation: anim 8s ease forwards;
+
+    animation-delay: 0.2s;
+}
+.icone path:nth-child(13) {
+    stroke-dasharray: 349px;
+    stroke-dashoffset: 349px;
+    animation: anim 8s ease forwards;
+
+    animation-delay: 0.2s;
+}
+.icone path:nth-child(14) {
+    stroke-dasharray: 349px;
+    stroke-dashoffset: 349px;
+    animation: anim 8s ease forwards;
+
+    animation-delay: 0.2s;
+}
+.icone path:nth-child(15) {
+    stroke-dasharray: 349px;
+    stroke-dashoffset: 349px;
+    animation: anim 8s ease forwards;
+
+    animation-delay: 0.2s;
+}
+.icone path:nth-child(16) {
+    stroke-dasharray: 349px;
+    stroke-dashoffset: 349px;
+    animation: anim 8s ease forwards;
+
+    animation-delay: 0.2s;
+}
+.icone path:nth-child(17) {
+    stroke-dasharray: 349px;
+    stroke-dashoffset: 349px;
+    animation: anim 8s ease forwards;
+
+    animation-delay: 0.2s;
+}
+.icone path:nth-child(18) {
+    stroke-dasharray: 349px;
+    stroke-dashoffset: 349px;
+    animation: anim 8s ease forwards;
+
+    animation-delay: 0.2s;
+}
+.icone path:nth-child(19) {
+    stroke-dasharray: 349px;
+    stroke-dashoffset: 349px;
+    animation: anim 8s ease forwards;
+
+    animation-delay: 0.2s;
+}
+.icone path:nth-child(20) {
+    stroke-dasharray: 349px;
+    stroke-dashoffset: 349px;
+    animation: anim 8s ease forwards;
+
+    animation-delay: 0.2s;
+}
+.icone path:nth-child(21) {
+    stroke-dasharray: 349px;
+    stroke-dashoffset: 349px;
+    animation: anim 8s ease forwards;
+
+    animation-delay: 0.2s;
+}
+.icone path:nth-child(22) {
+    stroke-dasharray: 349px;
+    stroke-dashoffset: 349px;
+    animation: anim 8s ease forwards;
+
+    animation-delay: 0.2s;
+}
+
+@keyframes anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+/* ======================== */
+.text-title {
+    overflow: hidden;
+    width: 100%;
+    height: 461px;
+}
+#title-art{
+    font-family: "Misto"; 
+    font-weight: lighter;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3em; 
+    color: rgb(0, 0, 0);
+    margin-top: 470px;
+}
+/* ========================= */
+
+
+.slider {
+    width:100%;
+    height: 100vh;
+    position: relative;
+    text-transform: uppercase !important;
+}
+
+@media screen and (min-width: 53em) {
+    .slider {
+        height: 100vh;
+    }
+}
+
+.rgbKineticSlider {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+canvas {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+}
+
+nav a {
+    text-decoration: none;
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    z-index: 1;
+    padding: 20px;
+    transition: 0.3s;
+    /* background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0); */
+}
+
+
+@media screen and (max-width: 53em) {
+    nav a {
+        top: auto;
+        bottom: 3rem;
+    }
+}
+
+
+@media (max-width: 699px){
+    body{
+        overflow: hidden;
+    }
+    .icone{
+        width: 300px;
+        height: 150px;
+        margin-top: -50px;
+    }
+    #title-art{
+        font-size: 2em;
+    }
+
+    .slider {
+        width:100%;
+        height: 100vh;
+    }
+
+    nav a{
+        margin-left: -95px;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1199px){
+    body{
+        overflow: hidden;
+    }
+    .icone{
+        width: 300px;
+        height: 150px;
+        margin-top: -100px;
+    }
+    #title-art{
+        font-size: 2em;
+    }
+
+    .slider {
+        width:100%;
+        height: 100vh;
+    }
+
+    nav a{
+        margin-left: -50px;
+    }
+}
